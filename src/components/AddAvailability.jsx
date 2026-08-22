@@ -11,7 +11,7 @@ const AddAvailability = () => {
       e.preventDefault();
       try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:8000/api/availability', {
+      const response = await axios.post('http://localhost:8000/api/doctors/availability', {
         day: day,
         startTime: startTime,
         endTime: endTime
